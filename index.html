@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine 💖</title>
+
+<style>
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
+h1 {
+  color: #ff3366;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.yes {
+  background: #ff3366;
+  color: white;
+}
+
+.no {
+  background: #ccc;
+}
+
+.heart {
+  font-size: 40px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="heart">❤️</div>
+
+  <h1>Hi Thansi</h1>
+  <p>Will you be my Valentine?</p>
+
+  <button class="yes" onclick="yesClick()">Yes 💖</button>
+  <button class="no" onclick="noClick()">No 🙂</button>
+
+  <p id="msg"></p>
+</div>
+
+<script>
+function yesClick() {
+  document.getElementById("msg").innerHTML =
+  "Yay! 💕 I’m so happy! 😍";
+}
+
+function noClick() {
+  document.getElementById("msg").innerHTML =
+  "It’s okay 🙂 Still special 💖";
+}
+</script>
+
+</body>
+</html>
